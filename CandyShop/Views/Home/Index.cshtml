@@ -1,0 +1,14 @@
+﻿@model HomeVM
+
+<partial name="_carousel" />
+
+<h1>Candy On Sale</h1>
+
+<div class="row">
+
+    @foreach (var candy in Model.CandyOnSale)
+    {
+<partial name="_candyCard" model="candy" />}
+
+</div>
+
